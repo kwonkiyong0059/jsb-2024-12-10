@@ -1,6 +1,5 @@
-package com.kkd.sbb.repository;
+package com.kkd.sbb.question;
 
-import com.kkd.sbb.entity.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

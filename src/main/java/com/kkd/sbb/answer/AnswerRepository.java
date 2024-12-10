@@ -1,6 +1,5 @@
-package com.kkd.sbb.repository;
+package com.kkd.sbb.answer;
 
-import com.kkd.sbb.entity.Answer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AnswerRepository extends JpaRepository<Answer, Integer> {

@@ -1,4 +1,4 @@
-package com.kkd.sbb.controller;
+package com.kkd.sbb;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

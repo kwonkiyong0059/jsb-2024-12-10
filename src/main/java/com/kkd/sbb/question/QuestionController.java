@@ -1,8 +1,6 @@
-package com.kkd.sbb.controller;
+package com.kkd.sbb.question;
 
-import com.kkd.sbb.entity.Question;
 import org.springframework.ui.Model;
-import com.kkd.sbb.repository.QuestionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

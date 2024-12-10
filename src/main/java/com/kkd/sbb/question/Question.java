@@ -1,5 +1,6 @@
-package com.kkd.sbb.entity;
+package com.kkd.sbb.question;
 
+import com.kkd.sbb.answer.Answer;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
