@@ -1,6 +1,7 @@
 package com.kkd.sbb;
 
 import com.kkd.sbb.entity.Question;
+import com.kkd.sbb.repository.AnswerRepository;
 import com.kkd.sbb.repository.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ class SbbApplicationTests {
 
     @Autowired
     private QuestionRepository questionRepository;
+
+
 
     @Test
     void testJpa1(){
@@ -57,5 +60,15 @@ class SbbApplicationTests {
         Question q = oq.get();
         q.setSubject("수정된 제목");
         this.questionRepository.save(q);
+    }
+
+    @Test
+    void testJpa6() {
+        assertEquals(2, this.questionRepository.count());
+        Optional<Question> oq = this.questionRepository.findById(1);
+        assertTrue(oq.isPresent());
+        Question q = oq.get();
+        this.questionRepository.delete(q);
+        assertEquals(1, this.questionRepository.count());
     }
 }
