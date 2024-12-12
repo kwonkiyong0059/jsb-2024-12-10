@@ -2,6 +2,7 @@ package com.kkd.sbb.answer;
 
 
 import com.kkd.sbb.question.Question;
+import com.kkd.sbb.user.SiteUser;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,6 +20,9 @@ public class Answer {
 
     @Column(columnDefinition =  "TEXT")
     private String content;
+
+    @ManyToOne
+    private SiteUser author;
 
     private LocalDateTime createDate;
 
